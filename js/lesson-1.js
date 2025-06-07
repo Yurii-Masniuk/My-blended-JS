@@ -12,12 +12,35 @@
 
 // !===================
 
-let number = prompt('Введіть число');
-number = Number(number);
-if (number === 10) {
-    console.log('Вірно');
-} else {
-    console.log('Невірно');
-}
+// let number = prompt('Введіть число');
+// number = Number(number);
+// if (number === 10) {
+//     console.log('Вірно');
+// } else {
+//     console.log('Невірно');
+// }
 
 // !===================
+
+// Task-2
+// У змінній min лежить випадкове число від 0 до 59.
+// Визначте, в яку чверть години потрапляє
+// це число (у першу, другу, третю чи четверту).
+// Виведіть в alert відповідне повідомлення, наприклад:
+// "10 входить в першу чверть"
+
+// const min = Math.floor(Math.random() * (59 - 0) + 0);
+
+// !===================
+
+// const min = Math.floor(Math.random() * (59 - 0 + 1)) + 0;
+// console.log(min);
+// if (min >= 0 && min <= 15) {
+//     console.log('The 4-st quarter');
+// } else if (min > 15 && min <= 30) {
+//     console.log('The 3-rd quarter');
+// } else if (min > 30 && min <= 45) {
+//     console.log('The 2-nd quarter');
+// } else {
+//     console.log('The 1-st quarter');
+// }
