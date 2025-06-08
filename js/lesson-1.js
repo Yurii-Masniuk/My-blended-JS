@@ -75,12 +75,13 @@
 //         result = 'осінь';
 //         break;
 //     default:
-//         result = 'Вибачте, але ви маєте ввести значення від 1 до 4 включно';        
+//         result = 'Вибачте, але ви маєте ввести значення від 1 до 4 включно';
 // }
 // console.log(result);
 
 // !===================
 
+// Task-4
 // Отримуйте від користувача число (кількість хвилин) через prompt
 // і виводьте у консоль рядок у форматі годин та хвилин.
 // Приклад: користувач вводить в prompt '70' -> в консолі відобразиться '01:10'.
@@ -88,10 +89,12 @@
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padStart#examples
 
 // let minutes = prompt('Введіть кількість хвилин');
-// let addMinutes = Number(minutes);
-
+// let numMinutes = Number(minutes);
 // let hours = Math.floor(minutes / 60);
-// let minute = addMinutes % 60;
+// let minute = numMinutes % 60;
+// let formattedHours = String(hours).padStart(2, '0');
+// let formattedMinutes = String(minute).padStart(2, '0');
+// console.log(`${formattedHours}:${formattedMinutes}`);
 
 // !===================
 
