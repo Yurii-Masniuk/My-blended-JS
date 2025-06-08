@@ -161,7 +161,7 @@
 //     }
 //     return sum;
 // }
-// console.log(getNumbers(5, 9));
+// console.log(getNumbers(5, 12));
 
 // !===================
 
