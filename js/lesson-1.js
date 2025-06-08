@@ -36,17 +36,18 @@
 // const min = Math.floor(Math.random() * (59 - 0 + 1)) + 0;
 // console.log(min);
 // if (min >= 0 && min <= 15) {
-//     console.log('The 4-st quarter');
+//     alert.log('The 4-st quarter');
 // } else if (min > 15 && min <= 30) {
-//     console.log('The 3-rd quarter');
+//     alert.log('The 3-rd quarter');
 // } else if (min > 30 && min <= 45) {
-//     console.log('The 2-nd quarter');
+//     alert.log('The 2-nd quarter');
 // } else {
-//     console.log('The 1-st quarter');
+//     alert.log('The 1-st quarter');
 // }
 
 // !===================
 
+// Task-3
 // Змінна num може набувати 4 значення: '1', '2', '3' або '4'
 // (запитуй це значення у користувача через prompt).
 // Якщо вона має значення '1', то у змінну result запишіть 'зима',
@@ -63,14 +64,18 @@
 // switch (number) {
 //     case '1':
 //         result = 'зима';
+//         break;
 //     case '2':
 //         result = 'весна';
+//         break;
 //     case '3':
 //         result = 'літо';
+//         break;
 //     case '4':
 //         result = 'осінь';
+//         break;
 //     default:
-//         result = 'Вибачте, але ви маєте ввести значення від 1 до 4 включно';
+//         result = 'Вибачте, але ви маєте ввести значення від 1 до 4 включно';        
 // }
 // console.log(result);
 
