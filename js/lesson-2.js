@@ -35,13 +35,13 @@
 // Якщо ім'я відсутнє – виводить повідомлення: "User not found".
 // const logins = ["Peter", "John", "Igor", "Sasha"];
 
-const logins = ["Peter", "John", "Igor", "Sasha"];
-function checkLogin(array) {
-    let userName = prompt('Введіть ім`я');
-    if (array.includes(userName)) {
-        alert(`Welcome, ${userName}`);
-    } else {
-        alert(`User not found`);
-    }    
-}
-checkLogin(logins);
+// const logins = ["Peter", "John", "Igor", "Sasha"];
+// function checkLogin(array) {
+//     let userName = prompt('Введіть ім`я');
+//     if (array.includes(userName)) {
+//         alert(`Welcome, ${userName}`);
+//     } else {
+//         alert(`User not found`);
+//     }    
+// }
+// checkLogin(logins);
