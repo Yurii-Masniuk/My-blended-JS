@@ -13,5 +13,9 @@
 
 let styles = ['jazz', 'blues'];
 styles.push('rock-n-roll');
+let index = styles.indexOf('blues');
+    if (index !== -1) {
+        styles[index] = 'classic';
+    }
 
-
+console.log(styles);
