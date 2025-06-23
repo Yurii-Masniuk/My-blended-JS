@@ -168,6 +168,33 @@
 // Якщо вказані властивості в обʼєкті відсутні (тобто метод exist повертає false),
 // методи sum і mult мають повертати рядок 'No such propeties'
 
+// const calculator = {
+// read(a, b) {
+//     this.a = a;
+//     this.b = b;
+// },
+// exist() {
+//     return this.hasOwnProperty('a') && this.hasOwnProperty('b');
+// },
+// sum() {
+//     if (!this.exist()) {
+//         return 'No such properties';
+//     } else {
+//         return this.a + this.b;
+//     }
+// },
+// mult() {
+//     if (!this.exist()) {
+//         return 'No such properties';
+//     } else {
+//         return this.a * this.b;
+//     }
+//     },
+// };
+// calculator.read(4, 5);
+// console.log(calculator.sum());  // 9
+// console.log(calculator.mult()); // 20
+
 // !===================
 // Task-10
 // Напишіть функцію calcTotalPrice(fruits, fruitName),
