@@ -42,6 +42,41 @@
 //         alert(`Welcome, ${userName}`);
 //     } else {
 //         alert(`User not found`);
-//     }    
+//     }
 // }
 // checkLogin(logins);
+
+// !===================
+// Task-3
+// Напишіть функцію caclculateAverage(),
+// яка приймає довільну кількість
+// аргументів і повертає їхнє середнє значення.
+// Додайте перевірку, що аргументи - це числа.
+
+// function calculateAverage(...args) {
+//     let sum = 0;
+//     let count = 0;
+//     for (const arg of args) {
+//         if (typeof arg === 'number') {
+//             sum += arg;
+//             count += 1;
+//         }
+//     }
+//     let average = sum / count;
+//     return average;
+// }
+// console.log(calculateAverage(1, 2, 3));
+// console.log(calculateAverage(4, 8, 10, 14));
+// console.log(calculateAverage(2, 3, 20, 25));
+// console.log(calculateAverage(2, 3, '20', 25));
+
+// !===================
+// Task-4
+// Напишіть функцію, яка сумуватиме сусідні числа 
+// і пушитиме їх в новий масив.
+
+// const someArr = [22, 11, 34, 5, 12, 13, 14, 15];
+
+// уточнення: складати необхідно перше число з другим, потім друге - з третім, 
+// третє - з четвертим і так до кінця.
+// В результаті функція має повертати масив [33, 45, 39, 17, 25, 27, 29].
