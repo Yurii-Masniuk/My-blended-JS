@@ -99,11 +99,31 @@
 // const numbers = [2, 5, 35, 56, 12, 24, 7, 80, 3];
 
 // const numbers = [2, 5, 35, 56, 12, 24, 7, 80, 3];
-// function findSmallestNumber(numbers) {    
+// function findSmallestNumber(numbers) {
 //     if (Array.isArray(numbers)) {
-//         return Math.min(...numbers);    
+//         return Math.min(...numbers);
 //     } else {
 //         return 'Sorry, it is not an array!';
-//     }    
+//     }
 // } console.log(findSmallestNumber(numbers));
 
+// !===================
+// Task-6
+// Напишіть функцію findLongestWord(string), яка
+// приймає довільний рядок, що складається лише зі слів, розділених
+// пробілами (параметр string), і повертатиме найдовше слово у реченні.
+
+// Скористайтесь цим прикладом виклику функції для перевірки її роботи:
+// console.log(findLongestWord("London is the capital of Great Britain")); // 'capital'
+
+// function findLongestWord(string) {
+//     const words = string.split(' ');
+//     let longestWord = '';
+//     for (let word of words) {
+//         if (word.length > longestWord.length) {
+//             longestWord = word;
+//         }
+//     }
+//     return longestWord;
+// }
+// console.log(findLongestWord('London is the capital of Great Britain'));
