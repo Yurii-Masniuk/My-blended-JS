@@ -79,12 +79,31 @@
 // третє - з четвертим і так до кінця.
 // В результаті функція має повертати масив [33, 45, 39, 17, 25, 27, 29].
 
-const someArr = [22, 11, 34, 5, 12, 13, 14, 15];
-function sumNumbers(numbers) {    
-    const newArr = [];
-    for (let i = 0; i <= numbers.length - 2; i++) {
-        newArr.push(numbers[i] + numbers[i + 1]);
-    }
-    return newArr;
-}
-console.log(sumNumbers(someArr));
+// const someArr = [22, 11, 34, 5, 12, 13, 14, 15];
+// function sumNumbers(numbers) {
+//     const newArr = [];
+//     for (let i = 0; i <= numbers.length - 2; i++) {
+//         newArr.push(numbers[i] + numbers[i + 1]);
+//     }
+//     return newArr;
+// }
+// console.log(sumNumbers(someArr));
+
+// !===================
+// Task-5
+// Напишіть функцію findSmallestNumber(numbers),
+// яка шукає найменше число в масиві.
+// Додайте перевірку, що функція отримує саме масив, і
+// якщо функція отримує масив - поверніть з функції найменше число,
+// в іншому випадку - поверніть 'Sory, it is not an array!'.
+// const numbers = [2, 5, 35, 56, 12, 24, 7, 80, 3];
+
+// const numbers = [2, 5, 35, 56, 12, 24, 7, 80, 3];
+// function findSmallestNumber(numbers) {    
+//     if (Array.isArray(numbers)) {
+//         return Math.min(...numbers);    
+//     } else {
+//         return 'Sorry, it is not an array!';
+//     }    
+// } console.log(findSmallestNumber(numbers));
+
