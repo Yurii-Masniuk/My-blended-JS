@@ -226,3 +226,17 @@
 //     { name: "Виноград", price: 440, quantity: 3 },
 //     { name: "Банан", price: 125, quantity: 3 },
 //   ];
+// function calcTotalPrice(fruits, fruitName) {
+//     let total = 0;
+//     for (const fruit of fruits) {
+//         if (fruit.name === fruitName) {
+//             total += fruit.price * fruit.quantity;
+//         }
+//     }
+//     return total;
+// }
+// console.log(calcTotalPrice(fruits, 'Яблуко'));
+// console.log(calcTotalPrice(fruits, 'Апельсин'));
+// console.log(calcTotalPrice(fruits, 'Банан'));
+// console.log(calcTotalPrice(fruits, 'Груша'));
+// console.log(calcTotalPrice(fruits, 'Виноград'));
