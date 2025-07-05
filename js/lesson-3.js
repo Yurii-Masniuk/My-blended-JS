@@ -79,9 +79,9 @@
 // !===================
 
 // Task-9
-// Дано масив об'єктів. 
-// Створіть новий масив, що містить тільки об'єкти, в яких 
-// вік більше 20 років. 
+// Дано масив об'єктів.
+// Створіть новий масив, що містить тільки об'єкти, в яких
+// вік більше 20 років.
 // Очікуваний результат: [{name: "John", age: 27}, {name: "Jane", age: 31}]
 
 // const user = [
@@ -92,3 +92,125 @@
 // let newArray = user.filter(item => item.age > 20);
 // console.log(newArray);
 
+// !===================
+
+// Task-11
+ // Розроби клас Calculator, який дозволяє виконувати арифметичні 
+ //  операції над числом за допомогою методів класу, підтримуючи  
+ // ланцюжковий виклик (method chaining).
+ //
+ // Вимоги до класу Calculator
+ // - Метод number(value)
+ // Встановлює початкове значення для наступних обчислень.
+ // Повертає сам об'єкт (this) для підтримки ланцюжкових викликів.
+ 
+ // - метод getResult, Повертає поточний результат усіх операцій.
+ // Не змінює значення, просто повертає його.
+ 
+ // - метод add - Додає value до поточного значення.
+ // Повертає сам об'єкт (this) для підтримки ланцюжкових викликів.
+ 
+ // - метод substruct - Віднімає value від поточного значення. Повертає this.
+ 
+// - метод divide - Ділить поточне значення на value, якщо value не дорівнює 0.
+// Якщо value === 0, викидає помилку з повідомленням про неможливість ділення.
+// Повертає сам об'єкт (this) для підтримки ланцюжкових викликів.
+ 
+ // - метод multiply -Множить поточне значення на value. Повертає this.
+ 
+ // Об'єкт класу може проводити послідовні операції у вигляді ланцюжка
+ 
+ // Приклад використання:
+ // const calc = new Calculator();
+
+
+// const result = calc
+//   .number(10)   // Встановлюємо початкове значення 10
+//   .add(5)       // Додаємо 5 (10 + 5 = 15)
+//   .subtract(3)  // Віднімаємо 3 (15 - 3 = 12)
+//   .multiply(4)  // Множимо на 4 (12 * 4 = 48)
+//   .divide(2)    // Ділимо на 2 (48 / 2 = 24)
+//   .getResult(); // Отримуємо результат: 24
+
+
+//   console.log(result); // 24
+
+class Calculator {
+    number(value) {
+        this.value = value;
+        return this;
+    }
+    getResult() {
+        return this.value;
+    }
+    add(value) {
+        this.value += value;
+        return this;
+    }
+    subtract(value) {
+        this.value -= value;
+        return this;
+      }
+    
+      multiply(value) {
+        this.value *= value;
+        return this;
+    }
+    divide(value) {
+        this.value /= 2;
+        return this;
+      }
+}
+const calc = new Calculator();
+const result = calc
+  .number(10)
+  .add(5)
+  .subtract(3)
+  .multiply(4)
+  .divide(2)
+  .getResult();
+
+console.log(result);
+
+  
+    
+
+// !================================================================
+//Напиши клас Notes який управляє колекцією нотаток у
+//властивості items.
+//Нотатка - це об'єкт із властивостями text і priority.
+//Додай класу статичний метод Priopity,
+//який буде повертати об'єкт із пріоритетами.
+//Додай методи addNote(note), removeNote(text)
+//updatePriority(text, newPriority)
+
+// class Notes {
+//   static Priopity() {
+//     return {
+//       HIGH: 'high',
+//       MEDIUM: 'medium',
+//       LOW: 'low'
+//     }
+//   }
+//   constructor() {
+//     this.items = [];
+//   }
+
+//
+//   addNote(note) {
+//     this.items.push(note);
+//   }
+
+//   removeNote(text) {
+//     this.items = this.items.filter((item) => item.text !== text);
+//   }
+// }
+
+
+// const note = new Notes();
+
+// note.addNote({ text: 'Купити хліб', priority: Notes.Priopity().HIGH });
+// note.removeNote('Купити хліб');
+// console.log(note);
+
+// !================================================================
