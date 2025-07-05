@@ -6,6 +6,8 @@
 // Очікуваний результат: [1, 4, 9, 16, 25].
 
 // const numbers = [1, 2, 3, 4, 5]
+// const newNumbers = numbers.map(item => item ** 2);
+// console.log(newNumbers);
 
 // !===================
 
@@ -19,6 +21,8 @@
 //  { id: 2, values: [4, 5, 6] },
 //  { id: 3, values: [7, 8, 9] },
 // ];
+// const res = data.flatMap(item => item.values);
+// console.log(res);
 
 // !===================
 
@@ -32,6 +36,8 @@
 //  { name: 'Jane', age: 31 },
 //  { name: 'Bob', age: 19 },
 // ];
+// const res = people.some(item => item.age < 20);
+// console.log(res);
 
 // !===================
 
@@ -39,7 +45,9 @@
 // Дано масив чисел [2, 4, 6, 8, 10].
 // Перевірте, чи є кожен елемент масиву парним. Очікуваний результат: true.
 
-// const numbers = [2, 4, 6, 8, 10];
+const numbers = [2, 4, 6, 8, 10];
+const evenNum = numbers.every(number => number % 2 === 0);
+console.log(evenNum);
 
 // !===================
 
@@ -47,3 +55,7 @@
 // Знайдіть перше непарне число
 
 // const numbers = [2, 1, 6, 8, 9, 10, 12];
+// const oddNum = numbers.find(numbers => numbers % 2 !== 0);
+// console.log(oddNum);
+
+// !===================
