@@ -61,12 +61,23 @@
 // !===================
 
 // Task-6
-// Відсортуйте масив чисел [4, 2, 5, 1, 3] 
+// Відсортуйте масив чисел [4, 2, 5, 1, 3]
 // у порядку зростання. Очікуваний результат: [1, 2, 3, 4, 5].
 
 // const numbersArray = [4, 2, 5, 1, 3];
 // numbersArray.sort((a, b) => a - b);
 // console.log(numbersArray);
+
+// !===================
+
+// Task-7
+// Відсортуйте масив рядків ["banana", "orange", "apple", "pear"]
+//  у порядку алфавіту.
+// Очікуваний результат: ["apple", "banana", "orange", "pear"].
+
+// const stringArray = ['banana', 'orange', 'apple', 'pear'];
+// stringArray.sort((a, b) => a.localeCompare(b));
+// console.log(stringArray);
 
 // !===================
 
