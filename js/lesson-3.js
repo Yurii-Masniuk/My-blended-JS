@@ -199,13 +199,33 @@
 // !===================
 
 // Task-12
- // Напиши клас Client який створює об'єкт з властивостями login email.
- // Оголоси приватні властивості #login #email, доступ до яких зроби 
- // через геттер та сеттер login email
+// Напиши клас Client який створює об'єкт з властивостями login email.
+// Оголоси приватні властивості #login #email, доступ до яких зроби через геттер та сеттер login email
 
-
+// class Client {
+//   #login
+//   #email
+//   constructor(params) {
+//     this.#login = params.login;
+//     this.#email = params.email;
+//   }
+//   get login() {
+//     return this.#login;
+//   }
+//   set login(newLogin) {
+//     this.#login = newLogin;
+//   }
+//   get email() {
+//     return this.#email;
+//   }
+//   set email(newEmail) {
+//     this.#email = newEmail;
+//   }
+// }
   
-    
+// !===================
+
+// Task-13
 
 // !================================================================
 //Напиши клас Notes який управляє колекцією нотаток у
