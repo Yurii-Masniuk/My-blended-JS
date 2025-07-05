@@ -45,9 +45,9 @@
 // Дано масив чисел [2, 4, 6, 8, 10].
 // Перевірте, чи є кожен елемент масиву парним. Очікуваний результат: true.
 
-const numbers = [2, 4, 6, 8, 10];
-const evenNum = numbers.every(number => number % 2 === 0);
-console.log(evenNum);
+// const numbers = [2, 4, 6, 8, 10];
+// const evenNum = numbers.every(number => number % 2 === 0);
+// console.log(evenNum);
 
 // !===================
 
@@ -59,3 +59,36 @@ console.log(evenNum);
 // console.log(oddNum);
 
 // !===================
+
+// Task-6
+
+// !===================
+
+// Task-8
+//  Відсортуйте масив об'єктів за віком у порядку зростання.
+// Очікуваний результат: [{name: "Bob", age: 19}, {name: "John", age: 27}, {name: "Jane", age: 31}].
+
+// const users = [
+//  { name: 'John', age: 27 },
+//  { name: 'Jane', age: 31 },
+//  { name: 'Bob', age: 19 },
+// ];
+// users.sort((a, b) => a.age - b.age);
+// console.log(users);
+
+// !===================
+
+// Task-9
+// Дано масив об'єктів. 
+// Створіть новий масив, що містить тільки об'єкти, в яких 
+// вік більше 20 років. 
+// Очікуваний результат: [{name: "John", age: 27}, {name: "Jane", age: 31}]
+
+// const user = [
+//  { name: 'John', age: 27 },
+//  { name: 'Jane', age: 31 },
+//  { name: 'Bob', age: 19 },
+// ]
+// let newArray = user.filter(item => item.age > 20);
+// console.log(newArray);
+
