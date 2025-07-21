@@ -95,6 +95,25 @@ navItemEl.style.backgroundColor = 'yellow';
 // При відправці форми, очисти інпут, верни чек бокс у положення
 // false, верни дефолтне значення "Anonymous" у span.
 
+const textInput = document.querySelector('.js-username-input');
+const textOutput = document.querySelector('.js-username-output')
+
+function handleInput(event) {
+    const inputValue = event.currentTarget.value.trim();
+    if (inputValue.length > 6) {
+        textInput.classList.add('success');
+        textInput.classList.remove('error');
+    } else {
+        textInput.classList.add('error');
+        textInput.classList.remove('success');
+    };
+    textOutput.textContent = inputValue !== '' ? inputValue : 'Anonymous';
+};
+
+textInput.addEventListener('input', handleInput);
+
+
+
 
 // !===================
 // Task-4
