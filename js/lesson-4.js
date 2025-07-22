@@ -110,7 +110,27 @@ function handleInput(event) {
     textOutput.textContent = inputValue !== '' ? inputValue : 'Anonymous';
 };
 
-textInput.addEventListener('input', handleInput);
+function handleFocus(event) {
+    const inputValue = event.currentTarget.value.trim();
+    if (inputValue === '') {
+        textInput.style.outline = '3px solid red';
+    } else {
+        textInput.style.outline = '3px solid green';
+    };
+};
+
+function handleBlur(event) {
+    const inputValue = event.currentTarget.value.trim();
+    if (inputValue === '') {
+        textInput.style.outline = '3px solid red';
+    } else {
+        textInput.style.outline = '3px solid green';
+    };
+};
+
+textInput.addEventListener('input', handleFocus);
+textInput.addEventListener('focus', handleFocus);
+textInput.addEventListener('blur', handleBlur);
 
 
 
