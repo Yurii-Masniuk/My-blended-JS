@@ -95,45 +95,67 @@ navItemEl.style.backgroundColor = 'yellow';
 // При відправці форми, очисти інпут, верни чек бокс у положення
 // false, верни дефолтне значення "Anonymous" у span.
 
-const textInput = document.querySelector('.js-username-input');
-const textOutput = document.querySelector('.js-username-output')
+// const textInput = document.querySelector('.js-username-input');
+// const textOutput = document.querySelector('.js-username-output');
+// const form = document.querySelector('.js-contact-form');
+// const checkbox = document.querySelector('.js-policy-checkbox');
 
-function handleInput(event) {
-    const inputValue = event.currentTarget.value.trim();
-    if (inputValue.length > 6) {
-        textInput.classList.add('success');
-        textInput.classList.remove('error');
-    } else {
-        textInput.classList.add('error');
-        textInput.classList.remove('success');
-    };
-    textOutput.textContent = inputValue !== '' ? inputValue : 'Anonymous';
-};
+// function handleInput(event) {
+//     const inputValue = event.currentTarget.value.trim();
+//     if (inputValue.length > 6) {
+//         textInput.classList.add('success');
+//         textInput.classList.remove('error');
+//     } else {
+//         textInput.classList.add('error');
+//         textInput.classList.remove('success');
+//     };
+//     textOutput.textContent = inputValue !== '' ? inputValue : 'Anonymous';
+// };
 
-function handleFocus(event) {
-    const inputValue = event.currentTarget.value.trim();
-    if (inputValue === '') {
-        textInput.style.outline = '3px solid red';
-    } else {
-        textInput.style.outline = '3px solid green';
-    };
-};
+// function handleFocus(event) {
+//     const inputValue = event.currentTarget.value.trim();
+//     if (inputValue === '') {
+//         textInput.style.outline = '3px solid red';
+//     } else {
+//         textInput.style.outline = '3px solid green';
+//     };
+// };
 
-function handleBlur(event) {
-    const inputValue = event.currentTarget.value.trim();
-    if (inputValue === '') {
-        textInput.style.outline = '3px solid red';
-    } else {
-        textInput.style.outline = '3px solid green';
-    };
-};
+// function handleBlur(event) {
+//     const inputValue = event.currentTarget.value.trim();
+//     if (inputValue === '') {
+//         textInput.style.outline = '3px solid red';
+//     } else {
+//         textInput.style.outline = '3px solid lime';
+//     };
+// };
 
-textInput.addEventListener('input', handleFocus);
-textInput.addEventListener('focus', handleFocus);
-textInput.addEventListener('blur', handleBlur);
+// textInput.addEventListener('input', handleFocus);
+// textInput.addEventListener('focus', handleFocus);
+// textInput.addEventListener('blur', handleBlur);
 
+// function handleSubmit(event) {
+//     event.preventDefault();
 
+//     const name = textInput.value.trim();
+//     const isChecked = checkbox.checked;
 
+//     if (name !== '' && isChecked) {
+//         const userData = { userName: name };
+//         console.log(userData);    
+//         textInput.value = '';
+//         checkbox.checked = false;
+//         textOutput.textContent = 'Anonymous';
+//         textInput.classList.remove('success', 'error');
+//         textInput.style.outline = '';
+//     } else {
+//         alert('Please enter your name and agree to the terms!');
+//     }
+// };
+
+// textInput.addEventListener('focus', handleFocus);
+// textInput.addEventListener('blur', handleBlur);
+// form.addEventListener('submit', handleSubmit);
 
 // !===================
 // Task-4
